@@ -242,7 +242,7 @@ public class LoginActivity extends AppCompatActivity {
                     mPasswordView.setError(getString(R.string.error_incorrect_password));
                     mPasswordView.requestFocus();
                 }else {
-                    Toast.makeText(getApplicationContext(), R.string.error_register_failed, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.error_login_failed, Toast.LENGTH_LONG).show();
                 }
 
             }
