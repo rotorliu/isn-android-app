@@ -35,5 +35,6 @@
     <string name="error_request_verify_code_failed">获取验证码失败</string>
     <string name="button_verify_code_timer">秒后重试</string>
     <string name="error_user_no_exist">该用户不存在</string>
+    <string name="error_login_failed">无法登陆</string>
 
 </resources>
