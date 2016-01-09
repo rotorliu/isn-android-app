@@ -36,5 +36,10 @@
     <string name="button_verify_code_timer">秒后重试</string>
     <string name="error_user_no_exist">该用户不存在</string>
     <string name="error_login_failed">无法登陆</string>
+    <string name="prompt_title">标题</string>
+    <string name="prompt_tag">标签</string>
+    <string name="action_post">发送</string>
+    <string name="title_activity_create_msg">创建消息</string>
+    <string name="is_public">是否公开</string>
 
 </resources>

@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
@@ -389,7 +390,9 @@ public class RegisterActivity extends AppCompatActivity {
                     mVerifyCodeView.setError(getString(R.string.error_verify_code_incorrect));
                     mVerifyCodeView.requestFocus();
                 }else {
-                    Toast.makeText(getApplicationContext(), R.string.error_register_failed, Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), R.string.error_register_failed, Toast.LENGTH_LONG).show();
+                    Snackbar.make(mRegisterFormView, R.string.error_register_failed, Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
                 }
 
             }
