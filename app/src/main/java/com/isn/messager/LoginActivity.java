@@ -31,6 +31,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.isn.models.User;
 import com.isn.services.Client;
 
 import java.util.ArrayList;
@@ -202,7 +203,7 @@ public class LoginActivity extends AppCompatActivity {
         private final String mMobile;
         private final String mPassword;
         private long result;
-
+        User u;
         UserLoginTask(String mobile, String password) {
             mMobile = mobile;
             mPassword = password;
@@ -212,6 +213,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected Boolean doInBackground(Void... params) {
             // TODO: attempt authentication against a network service.
+
 
             try {
                 result = Client.getInstance().login(mMobile, mPassword);

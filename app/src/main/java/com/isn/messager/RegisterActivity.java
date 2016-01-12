@@ -415,11 +415,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         @Override
         protected Boolean doInBackground(Void... params) {
-            try {
-                Client.getInstance().requestVerificationCode(mMobile);
-            } catch (IOException e) {
-                return false;
-            }
+            Client.getInstance().requestVerificationCode(mMobile);
             return true;
         }
 
